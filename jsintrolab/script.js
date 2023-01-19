@@ -1,7 +1,7 @@
 /* runs test to see if expected argument is === to value returned by function2test argument */
 function myFunctionTest(expected, found) {
   if (expected === found) {
-    return "TEST SUCCEEDED";
+    return "TEST SUCCEEDED " + found;
   } else {
     return "TEST FAILED.  Expected " + expected + " found " + found;
   }
