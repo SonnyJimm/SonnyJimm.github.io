@@ -56,11 +56,13 @@ function maxOfThree(a, b, c) {
   return max(max(a, b), c);
 }
 console.log("-------------------- max of 2 --------------------------------");
+console.log(max);
 console.log(
   "Expected output of max(20,10) is 20  " + myFunctionTest(20, max(20, 10))
 );
 
 console.log("-------------------- max of 3 --------------------------------");
+console.log(maxOfThree);
 console.log(
   "Expected output of maxOfThree(5,4,44) is 44  " +
     myFunctionTest(44, maxOfThree(5, 4, 44))
@@ -71,6 +73,7 @@ console.log(
 );
 
 console.log("-------------------- is Vowel --------------------------------");
+console.log(isVowel);
 console.log(
   "Expected output of isVowel('a') is true  " +
     myFunctionTest(true, isVowel("a"))
@@ -87,6 +90,7 @@ console.log(
 console.log(
   "-------------------- sum and multiply --------------------------------"
 );
+console.log(sum);
 console.log(
   "Expected output of sum([1,2,3,4]) is 10  " +
     myFunctionTest(10, sum([1, 2, 3, 4]))
@@ -102,6 +106,7 @@ console.log(
 );
 
 console.log("-------------------- reverse --------------------------------");
+console.log(reverse);
 console.log(
   "Expected output of reverse(qwert) is trewq  " +
     myFunctionTest("trewq", reverse("qwert"))
@@ -113,6 +118,7 @@ console.log(
 console.log(
   "-------------------- findLongestWord --------------------------------"
 );
+console.log(findLongestWord);
 console.log(
   "Expected output of findLongestWord(['golang','java','react']) is 6(golang)  " +
     myFunctionTest(6, findLongestWord(["golang", "java", "react"]))
@@ -124,6 +130,7 @@ console.log(
 console.log(
   "-------------------- findLongWords --------------------------------"
 );
+console.log(findLongWords);
 console.log(
   "Expected output of findLongWords(['Time Travel','length','bing']) is ['Time Travel','length']  " +
     myFunctionTest(
