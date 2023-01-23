@@ -7,6 +7,9 @@ let index = 0;
 
 // stores selected frame;
 let frame = [];
+
+
+let ANIMATIONS = this.window.ANIMATIONS;
 // init values on page loads
 window.onload = () => {
   'use strict';
