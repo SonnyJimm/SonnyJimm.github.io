@@ -6,7 +6,7 @@ let interVal = 250;
 let index = 0;
 
 // stores selected frame;
-let frame = [];
+let frames = [];
 
 
 let ANIMATIONS = this.window.ANIMATIONS;
