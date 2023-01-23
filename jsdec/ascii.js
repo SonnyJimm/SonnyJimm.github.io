@@ -6,7 +6,6 @@ let interVal = 250;
 let index = 0;
 
 // stores selected frame;
-let frames = [];
 
 // init values on page loads
 window.onload = () => {
@@ -35,7 +34,7 @@ const onstop = () => {
 // fire the animation
 const startanimation = (animation) => {
   'use strict';
-  frames = ANIMATIONS[animation];
+  frames = this.ANIMATIONS[animation];
   frames = frames.split('=====\n');
   startInterval();
 };
@@ -45,7 +44,7 @@ const stopanimation = () => {
   document.getElementById('start').disabled = false;
   document.getElementById('animation').disabled = false;
   document.getElementById('stop').disabled = true;
-  document.getElementById('text-area').innerText = ANIMATIONS.Blank;
+  document.getElementById('text-area').innerText = this.ANIMATIONS.Blank;
   index = 0;
   clearInterval(intervalID);
   intervalID = 0;
