@@ -27,11 +27,11 @@ const onstart = () => {
 };
 //on stop animation button is clicked
 const onstop = () => {
+  "use strict";
   document.getElementById("start").disabled = false;
   document.getElementById("animation").disabled = false;
   document.getElementById("stop").disabled = true;
   document.getElementById("text-area").innerText = this.ANIMATIONS.Blank;
-  ("use strict");
   stopanimation();
 };
 // fire the animation
