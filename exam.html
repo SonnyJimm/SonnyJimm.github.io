@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="exam.css" rel="stylesheet"/>
+    <title>Exam</title>
+</head>
+<body>
+    <style>
+        .content{
+    width: 300px;
+    display: flex;
+}
+.content form{
+    width: 95%;
+
+}
+.firstname{
+    width: 100%;
+    display: flex;
+    margin: 10px;
+}
+.lastname{
+    width: 100%;
+    display: flex;
+    margin: 10px;
+}
+.favfood{
+    width: 100%;
+    display: flex;
+    margin: 10px;
+}
+input{
+    width: fit-content;
+    border-radius: 5px;
+    border-color: rgb(231, 227, 227);
+}
+select{
+    border-radius: 5px;
+    border-color: rgb(205, 201, 201);
+}
+.firstname >*{
+    flex: 1 1 150px;
+}
+.lastname >*{
+    flex: 1 1 150px;
+}
+.favfood >*{
+    flex: 1 1 150px;
+}
+
+    </style>
+    <div class="content">
+        <form>
+            <div class="firstname">
+                <label for="firstName">First Name:</label>
+                <input id="firstName" type="text"/>
+            </div>
+            <div class="lastname">
+                <label for="lastName">Last Name: </label>
+                <input id="lastName" type="text"/>
+            </div>
+
+            <div class="favfood">
+                <label for="favFood">Favorite Food: </label>
+                <select id="favFood">
+                    <option>Pizza</option>
+                    <option>Ice Cream</option>
+                    <option>Burger and Fries</option>
+                </select>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
