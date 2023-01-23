@@ -7,7 +7,6 @@ let index = 0;
 
 // init values on page loads
 window.onload = () => {
-  "use strict";
   // put all of your code here
   document.getElementById("start").onclick = onstart;
   document.getElementById("stop").onclick = onstop;
