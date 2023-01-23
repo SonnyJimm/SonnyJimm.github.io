@@ -8,8 +8,6 @@ let index = 0;
 // stores selected frame;
 let frames = [];
 
-
-let ANIMATIONS = this.window.ANIMATIONS;
 // init values on page loads
 window.onload = () => {
   'use strict';
@@ -47,7 +45,7 @@ const stopanimation = () => {
   document.getElementById('start').disabled = false;
   document.getElementById('animation').disabled = false;
   document.getElementById('stop').disabled = true;
-  document.getElementById('text-area').innerText = ANIMATIONS['Blank'];
+  document.getElementById('text-area').innerText = ANIMATIONS.Blank;
   index = 0;
   clearInterval(intervalID);
   intervalID = 0;
