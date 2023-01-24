@@ -1,0 +1,54 @@
+html{
+    font-family: sans-serif;
+}
+body{
+    margin: 0;;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+#nav{
+    background-image: linear-gradient(#53b2ea, #1f9ce7);
+    width: 100%;
+    height: 50px;
+    color: aliceblue;
+    font-size: 12pt;
+    display: flex;
+    align-items: center;
+}
+.nav-options{
+    padding-left: 1%;
+}
+.sys-name{
+    margin-right: 40px;
+}
+.nav-item{
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left: 1px solid aliceblue;
+}
+.in-line-section{
+    display: flex;
+    flex: 1;
+    flex-direction:row-reverse;
+    align-items: center;
+    padding-right: 1%;
+}
+.sign-out{
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 20px;
+    border: 0px solid aliceblue;
+}
+.title{
+    margin-top: 20px;
+    font-size: 24pt;
+}
+.product-form{
+    margin-top: 20px;
+}
+.product-form label{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
