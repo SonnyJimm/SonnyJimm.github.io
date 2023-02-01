@@ -1,14 +1,15 @@
 $(() => {
   $("#start").click(start);
 });
-let inter;
+var inter;
 function start() {
   drawCircles($("#circles").val(), $("#width").val());
-  if(inter != 0){
+  onClickListener();
+  console.log(inter);
+  if (inter != 0) {
     clearInterval(inter);
   }
-  inter = onClickListener();
-  growCircles($("#rate").val(), $("#growth").val());
+  inter = growCircles($("#rate").val(), $("#growth").val());
 }
 
 const drawCircles = (count, size) => {
@@ -21,6 +22,7 @@ const drawCircles = (count, size) => {
     "beige",
     "blueviolet",
   ];
+  $("#circle-container").empty();
   for (let i = 0; i < count; i++) {
     $("#circle-container").append("<div class='circle'></div>");
   }
